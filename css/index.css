@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Major+Mono+Display|Overpass+Mono|Poiret+One|Staatliches|Wire+One&display=swap');
+
+*,
+*:before
+*:after{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+/*----------------------*/
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+/*----------------------*/
+header{
+	height: 100vh;
+	max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+
+    font-size: 20pt;
+    color: #261E17;
+}
+.h1New{
+	font-family: 'Staatliches', cursive;
+	font-style: italic;
+	background-color: white;
+	top: 0;
+	left: -6%;
+	transform: scale(0.5);
+	position: fixed;
+    transition: transform 1s;
+}
+.navNew{
+	top: 45%;
+	right: -2%;
+	transform: rotate(90deg);
+    position: fixed;
+   	z-index: 2;
+	background-color: white;
+    transition: transform 1s;
+}
+.h1OG{
+	font-family: 'Staatliches', cursive;
+	font-style: italic;
+	background-color: white;
+	transition: transform 1s;
+}
+.navOG{
+	z-index: 2;
+	background-color: white;
+	transition: transform 1s;
+}
+nav, a:active, a:visited{
+	color: #261E17;
+}
+nav, a:hover{
+	color: #BF8173;
+}
+h2{
+	font-family: 'Staatliches', cursive;
+	font-size: 30pt;
+}
+h3{
+	font-family: 'Staatliches', cursive;
+	font-size: 20pt;
+	margin-left: 3%;
+}
+li{
+	font-family: 'Staatliches', cursive;
+}
+#sub{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+article{
+	min-width: 80%;
+	height: 80vh;
+	margin: 3%;
+	margin-top: 7%;
+	border-style: solid;
+	overflow: visible;
+	background-color: white;
+}
+.menubtn{
+	background-color: #F2B199;
+	justify-content: center;
+    align-items: center;
+    padding: 5%;
+    overflow: visible;
+    transition: background-color 1s;
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+	overflow: auto;
+}
+.dropdown > .menu-content{
+	/*display: none;
+	position: absolute;*/
+	padding-left: 5%;
+	padding-right: 5%;
+	z-index: 1;
+	font-size: 20pt;
+
+	visibility: hidden;
+    opacity: 0;
+
+    background-color: white;
+    transition: opacity 2s, background-color 1s;
+}
+.menu-content a{
+	text-decoration: none;
+	display: block;
+}
+.menu-content a:hover{
+	background-color: #f5cfc1;
+	color: black;
+}
+.dropdown:hover > .menu-content{
+	/*display: block;*/
+
+	visibility: visible;
+  	opacity: 1;
+}
+.dropdown:hover .menubtn{
+	background-color: #f5cfc1;
+}
+.contactbanner{
+	background-color: #F2B199;
+	justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+#adobe{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.slideshow{
+	max-height: 90vh;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.slide{
+	flex-direction: row;
+	max-height: 60vh;
+	width: auto;
+	margin-left: 3%;
+	margin-right: 3%;
+}
